@@ -20,7 +20,7 @@ public class NumberConverter {
         try {
             return Integer.parseInt(stringNumber.trim());
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("입력값에 숫자가 아닌 값이 존재합니다: ", e);
+            throw new IllegalArgumentException("입력 형식이 잘못되었습니다: ", e);
         }
     }
 
